@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: burlywood; /* bisque color background */
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .course-list {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Welcome to Our College</h1>
+    <h2>Vidhya Institute Of Technology</h2>
+    <p>Your future starts here!</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#login">Login</a>
+        <a href="#courses">Course Details</a>
+        <a href="#registration">Register</a>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<div id="home" class="container">
+    <h2>Our Courses</h2>
+    <p>Explore various courses offered at our college. <a href="#courses">Click here for details.</a></p>
+</div>
+
+<!-- Login Section -->
+<div id="login" class="container">
+    <h2>Login</h2>
+    <div class="form-container">
+        <form action="#">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</div>
+
+<!-- Course Details Section -->
+<div id="courses" class="container">
+    <h2>Available Courses</h2>
+    <ul class="course-list">
+        <li>Bachelor of Computer Applications (BCA)</li>
+        <li>Master of Computer Applications (MCA)</li>
+        <li>Bachelor of Science in Information Technology (BSc IT)</li>
+        <li>Master of Business Administration (MBA)</li>
+        <li>Bachelor of Engineering (BE) in Computer Science</li>
+    </ul>
+</div>
+
+<!-- Registration Section -->
+<div id="registration" class="container">
+    <h2>Registration</h2>
+    <div class="form-container">
+        <form action="#">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="reg-username">Username:</label><br>
+            <input type="text" id="reg-username" name="reg-username" required><br><br>
+            <label for="reg-password">Password:</label><br>
+            <input type="password" id="reg-password" name="reg-password" required><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Our College. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
